@@ -1,0 +1,13 @@
+ 
+message DroneFeed {
+  string drone_id = 1;  
+  bytes thermal_image = 2;  // JPEG/PNG  
+  GPSPosition location = 3; 
+  int32 battery_level = 4;  
+}
+
+message GPSPosition {
+  double lat = 1;  
+  double lon = 2;  
+  int32 altitude = 3;  // Meters  
+}
